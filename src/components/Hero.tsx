@@ -1,6 +1,7 @@
 import Whatsapp from "../assets/whatsapp.svg"
 import Discord from "../assets/discord.svg"
 import Github from "../assets/github.svg"
+import Typewriter from "typewriter-effect"
 
 export default function Hero() {
   return (
@@ -9,7 +10,19 @@ export default function Hero() {
         <h1 className="text-4xl leading-[3rem] md:leading-[4rem] font-bold md:text-5xl pr-14">
           Hi,<br />
           I'm Nucleus, <br />
-          <span className="career">Web Developer.</span>
+          <Typewriter
+            onInit={typewriter => typewriter
+              .typeString("Web Developer.")
+              .deleteAll()
+              .typeString("Frontend Developer.")
+              .deleteAll()
+              .typeString("Backend Developer.")
+              .deleteAll()
+              .typeString("Fullstack Developer.")
+              .deleteAll()
+              .start()}
+            options={{ loop: true, delay: 200 }}
+          />
         </h1>
         <p className="text-xl">
           Crafting seamless online <br /> experience is my passion.

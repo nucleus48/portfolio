@@ -8,12 +8,16 @@
   }
 
   body {
-    @apply bg-gray-900 text-white container sm:px-8 max-w-[1000px]
+    @apply bg-gray-900
+  }
+
+  #root {
+    @apply text-white container sm:px-8 max-w-[1000px]
   }
 }
 
 @layer components {
   .projects {
-    grid-template-columns:  repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
