@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply bg-gray-900 text-white container max-w-[1000px]
+  }
+}
+
+@layer components {
+  .projects {
+    grid-template-columns:  repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
