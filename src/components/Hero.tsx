@@ -5,9 +5,9 @@ import Typewriter from "typewriter-effect"
 
 export default function Hero() {
   return (
-    <section className="flex flex-col sm:flex-row sm:justify-center md:gap-8 lg:gap-40">
-      <div className="py-16 relative space-y-4 w-[100%] max-w-[500px] sm:w-max sm:mx-0 mx-auto sm:max-w-max">
-        <h1 className="text-4xl leading-[3rem] md:leading-[4rem] font-bold md:text-5xl pr-14">
+    <section className="flex flex-col sm:flex-row sm:justify-between md:gap-8 lg:gap-40">
+      <div className="py-16 relative space-y-4 w-[100%] max-w-[500px] sm:w-auto sm:mx-0 mx-auto sm:max-w-auto">
+        <h1 className="text-4xl leading-[3rem] md:leading-[4rem] font-bold md:text-5xl pr-14 sm:pr-0">
           Hi,<br />
           I'm Nucleus, <br />
           <Typewriter
@@ -34,7 +34,7 @@ export default function Hero() {
           <a href="#"><img className="w-6 sm:w-10 block" src={Github} alt="github" /></a>
         </div>
       </div>
-      <div className="w-60 h-60 mx-auto self-center bg-gray-800 rounded mb-16 sm:mb-0"></div>
+      <div className="w-60 h-60 mr-4 self-center bg-gray-800 rounded mb-16 sm:mb-0"></div>
     </section>
   )
 }

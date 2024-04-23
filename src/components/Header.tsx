@@ -1,7 +1,8 @@
 export default function Header() {
   return (
     <header className="py-4 flex items-center">
-      <div className="size-16 rounded-full mr-auto bg-gray-700"></div>
+      {/* <div className="size-16 rounded-full mr-auto bg-gray-700"></div> */}
+      <div className="font-bold text-xl tracking-widest mr-auto font-[Recursive]">Nucleus</div>
 
       
       <nav className="hidden sm:block">
