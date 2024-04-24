@@ -24,7 +24,7 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="text-center py-16">
+    <section id="skills" className="text-center py-16 max-w-[800px] mx-auto">
       <h2 className="text-2xl sm:text-3xl font-bold mb-8">My Skills</h2>
 
       <div className="flex flex-wrap gap-4 content-center justify-center">
