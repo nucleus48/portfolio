@@ -6,7 +6,7 @@ import HeroImg from "../assets/webdev.jpg"
 
 export default function Hero() {
   return (
-    <section className="flex flex-col sm:flex-row sm:justify-between md:gap-8 lg:gap-40">
+    <section className="mb-16 sm:overflow-hidden grid gap-4 auto-rows-max sm:grid-cols-[1fr_1fr]">
       <div className="py-16 relative space-y-4 w-[100%] max-w-[500px] sm:w-auto sm:mx-0 mx-auto sm:max-w-auto">
         <h1 className="text-4xl leading-[3rem] md:leading-[4rem] font-bold md:text-5xl pr-14 sm:pr-0">
           Hi,<br />
@@ -35,8 +35,8 @@ export default function Hero() {
           <a href="#"><img className="w-6 sm:w-10 block" src={Github} alt="github" /></a>
         </div>
       </div>
-      <div className="hero">
-        <img className="h-full rotate-3" src={HeroImg} alt="hero" />
+      <div className="hero -rotate-3 bg-white overflow-hidden flex justify-center">
+        <img className="h-full w-full max-w-[500px] object-contain rotate-3" src={HeroImg} alt="hero" />
       </div>
     </section>
   )

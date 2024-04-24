@@ -12,7 +12,7 @@
   }
 
   #root {
-    @apply text-white container sm:px-8 max-w-[1000px]
+    @apply text-white container sm:px-8 max-w-[1200px]
   }
 }
 
@@ -20,9 +20,15 @@
   .projects {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
-  
+
   .hero {
-    @apply flex justify-center w-[200vw] h-52 self-center mb-16 sm:mb-0 bg-white -rotate-3 overflow-hidden sm:h-full items-center;
+    box-shadow: 100px 0 white, -100px 0 white;
+  }
+
+  @media (min-width: theme(screens.sm)) {
+    .hero {
+      box-shadow: 0 100px white, 0 -100px white, 100px 0 white;
+    }
   }
 }
 /*
