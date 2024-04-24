@@ -17,10 +17,6 @@
 }
 
 @layer components {
-  .projects {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  }
-
   .hero {
     box-shadow: 100px 0 white, -100px 0 white;
   }
@@ -30,8 +26,12 @@
       box-shadow: 0 100px white, 0 -100px white, 100px 0 white;
     }
   }
+
+  .tool {
+    background: rgb(37 99 235 / .2);
+  }
 }
-/*
+/* 
 * {
   @apply border border-white
 }  */
