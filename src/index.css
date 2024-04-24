@@ -20,8 +20,12 @@
   .projects {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
+  
+  .hero {
+    @apply flex justify-center w-[200vw] h-52 self-center mb-16 sm:mb-0 bg-white -rotate-3 overflow-hidden sm:h-full items-center;
+  }
 }
-/* 
+/*
 * {
   @apply border border-white
-} */
+}  */

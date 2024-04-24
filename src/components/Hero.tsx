@@ -2,6 +2,7 @@ import Whatsapp from "../assets/whatsapp.svg"
 import Discord from "../assets/discord.svg"
 import Github from "../assets/github.svg"
 import Typewriter from "typewriter-effect"
+import HeroImg from "../assets/webdev.jpg"
 
 export default function Hero() {
   return (
@@ -34,7 +35,9 @@ export default function Hero() {
           <a href="#"><img className="w-6 sm:w-10 block" src={Github} alt="github" /></a>
         </div>
       </div>
-      <div className="w-60 h-60 mr-4 self-center bg-gray-800 rounded mb-16 sm:mb-0"></div>
+      <div className="hero">
+        <img className="h-full rotate-3" src={HeroImg} alt="hero" />
+      </div>
     </section>
   )
 }
