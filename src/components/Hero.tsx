@@ -30,9 +30,9 @@ export default function Hero() {
         </p>
         <div className="absolute sm:static right-4 -top-4 py-16 h-full flex flex-col gap-2 sm:flex-row sm:h-max sm:w-[250px] md:w-[350px] sm:gap-4 items-center sm:py-0">
           <div className="sm:order-4 text-xl h-full sm:w-full w-1 rounded-full bg-blue-600 sm:h-1"></div>
-          <a href="#"><img className="w-6 sm:w-10 block" src={Whatsapp} alt="whatsapp" /></a>
-          <a href="#"><img className="w-6 sm:w-10 block" src={Discord} alt="discord" /></a>
-          <a href="#"><img className="w-6 sm:w-10 block" src={Github} alt="github" /></a>
+          <a href="https://wa.me/2347049695246"><img className="w-6 sm:w-10 block" src={Whatsapp} alt="whatsapp" /></a>
+          <a href="https://discord.com/invite/NUaGntDJ"><img className="w-6 sm:w-10 block" src={Discord} alt="discord" /></a>
+          <a href="https://github.com/nucleus48"><img className="w-6 sm:w-10 block" src={Github} alt="github" /></a>
         </div>
       </div>
       <div className="hero -rotate-3 bg-white overflow-hidden flex justify-center">
