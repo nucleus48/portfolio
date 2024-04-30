@@ -7,7 +7,7 @@ export default function Projects() {
     <section id="projects" className="py-16">
       <h2 className="text-2xl sm:text-3xl font-bold mb-8">Projects</h2>
 
-      <div className="grid lg:grid-cols-[1fr_1fr] gap-8">
+      <div className="grid md:grid-cols-[1fr_1fr] gap-8">
         {projects.map((project) => (
           <div
             key={project.name}
