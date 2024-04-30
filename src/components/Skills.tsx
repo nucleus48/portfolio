@@ -3,11 +3,9 @@ import CSS from '../assets/css.svg'
 import JS from '../assets/js.svg'
 import TS from '../assets/ts.svg'
 import RT from '../assets/react.svg'
-import NEXT from '../assets/nextjs.svg'
 import TAILWIND from '../assets/tailwind.svg'
 import SVELTE from '../assets/svelte.svg'
 import FIREBASE from '../assets/firebase.svg'
-import PRISMA from '../assets/prisma.svg'
 
 export default function Skills() {
   const skills = [
@@ -16,8 +14,6 @@ export default function Skills() {
     ['Javascript', JS],
     ['Typescript', TS],
     ['React', RT],
-    ['Nextjs', NEXT],
-    ['Prisma', PRISMA],
     ['Tailwincss', TAILWIND],
     ['Svelte', SVELTE],
     ['Firebase', FIREBASE]
@@ -29,7 +25,7 @@ export default function Skills() {
 
       <div className="flex flex-wrap gap-4 content-center justify-center">
         {skills.map(([skill, img]) => (
-          <div key={skill} className={`w-32 h-32 flex bg-gray-800 rounded flex-col justify-center items-center gap-2 ${(skill == 'Nextjs' || skill == 'Prisma') && 'text-gray-900 bg-white'}`}>
+          <div key={skill} className={`w-32 h-32 flex bg-gray-800 rounded flex-col justify-center items-center gap-2`}>
             <div>
               <img className='w-16' src={img} alt="logo" />
             </div>
