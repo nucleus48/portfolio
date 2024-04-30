@@ -7,5 +7,14 @@
     "description": "Experience the simplicity and convenience of exchanging your cryptocurrencies and gift cards with our platform.",
     "tools": ["HTML", "CSS", "JS"],
     "date": "4/24/2024"
+  },
+  {
+    "name": "Fupre Community",
+    "url": "https://noxerafx.web.app",
+    "source": "https://github.com/nucleus48/fupre-community",
+    "preview": "fupre-community.jpg",
+    "description": "Your go-to platform for collaboration and connectivity at FUPRE. Join us now and be part of the vibrant community!",
+    "tools": ["React", "Clerk", "Tailwind", "Typescript"],
+    "date": "4/30/2024"
   }
 ]
