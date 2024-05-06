@@ -16,5 +16,14 @@
     "description": "Your go-to platform for collaboration and connectivity at FUPRE. Join us now and be part of the vibrant community!",
     "tools": ["React", "Clerk", "Tailwind", "Typescript"],
     "date": "4/30/2024"
+  },
+  {
+    "name": "B Naira Exchange",
+    "url": "https://bnairaexchange.com",
+    "source": "https://github.com/Princewill-Kelechi/bnairaexchange-landingpage",
+    "preview": "bnairaexchange.png",
+    "description": "B naira is a platform that offers seamless crypto and digital currencies trading. Empowering both novice traders and seasoned investors, we provide a user-friendly interface coupled with advanced tools to navigate the dynamic crypto market with confidence.",
+    "tools": ["Nextjs", "Tailwind"],
+    "date": "5/6/2024"
   }
 ]
