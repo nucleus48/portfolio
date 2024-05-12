@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Header />
 
-      <main>
+      <main className="text-balance">
         <Hero />
         <About />
         <Skills />

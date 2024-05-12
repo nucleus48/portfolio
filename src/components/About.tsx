@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-16">
+    <section id="about" className="py-16 text-wrap">
       <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">About Me</h2>
       <div className="flex gap-4 sm:items-baseline">
         <div className="border-l-4 border-blue-600 sm:border-l-0 sm:border-t-4 sm:w-1/4"></div>
