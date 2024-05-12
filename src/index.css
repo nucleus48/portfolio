@@ -30,6 +30,11 @@
   .tool {
     background: rgb(37 99 235 / .2);
   }
+
+  .projects {
+    @apply grid items-start auto-rows-max gap-8;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 /* 
 * {
