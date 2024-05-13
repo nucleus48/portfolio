@@ -9,7 +9,7 @@ export default function Projects() {
 
       <div className="projects">
         {projects.map((project) => (
-          <div key={project.name} className="">
+          <div key={project.name}>
             <img
               src={project.preview}
               alt="preview"
@@ -17,7 +17,19 @@ export default function Projects() {
             />
 
             <div className="flex flex-col gap-2">
-              <div className="font-bold text-lg">{project.name}</div>
+              <div className="flex gap-4 items-center">
+                <div className="font-bold text-lg">{project.name}</div>
+                {project.source && (
+                  <a href={project.source} className="flex items-center gap-1 text-sm">
+                    <img className="w-3" src={Github} alt="globe" />
+                    <span>Source</span>
+                  </a>
+                )}
+                <a href={project.url} className="flex items-center gap-1 text-sm">
+                  <img className="w-3" src={Globe} alt="globe" />
+                  <span>Live</span>
+                </a>
+              </div>
               <div className="text-gray-300 line-clamp-3">
                 {project.description}
               </div>
@@ -27,18 +39,6 @@ export default function Projects() {
                     {tool}
                   </div>
                 ))}
-              </div>
-              <div className="text-sm font-medium text-gray-400 flex gap-4">
-                {project.source && (
-                  <a href={project.source} className="flex items-center gap-1">
-                    <img className="w-4" src={Github} alt="globe" />
-                    <span>Source</span>
-                  </a>
-                )}
-                <a href={project.url} className="flex items-center gap-1">
-                  <img className="w-4" src={Globe} alt="globe" />
-                  <span>Live</span>
-                </a>
               </div>
             </div>
           </div>
