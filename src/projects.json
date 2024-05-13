@@ -19,7 +19,7 @@
   },
   {
     "name": "B Naira Exchange",
-    "url": "https://bnairaexchange-landingpage.vercel.app",
+    "url": "https://bnairaexchange.com",
     "preview": "bnairaexchange.png",
     "description": "B naira is a platform that offers seamless crypto and digital currencies trading. Empowering both novice traders and seasoned investors, we provide a user-friendly interface coupled with advanced tools to navigate the dynamic crypto market with confidence.",
     "tools": ["Nextjs", "Tailwind", "Typescript", "React"],
@@ -27,7 +27,7 @@
   },
   {
     "name": "J IYKE Forex Portal",
-    "url": "https://jiykeforexportal.vercel.app/",
+    "url": "https://jiykeforexportal.com",
     "preview": "jiykeforexportal.png",
     "description": "J IYKE Forex Portal is a platform that offers seamless and affordable solutions for buying, selling and trading digital currencies in Nigeria. ",
     "tools": ["Nextjs", "Tailwind", "Typescript", "React"],
