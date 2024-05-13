@@ -27,11 +27,11 @@ export default function Skills() {
 
       <div className="flex flex-wrap gap-4 content-center justify-center">
         {skills.map(([skill, img]) => (
-          <div key={skill} className={`w-32 h-32 flex bg-gray-800 rounded flex-col justify-center items-center gap-2 ${skill == "Nextjs" && "bg-white text-gray-800"}`}>
+          <div key={skill} className={`transition-all hover:scale-110 w-32 h-32 flex bg-gray-800 rounded flex-col justify-center items-center gap-2 ${skill == "Nextjs" && "bg-white text-gray-800"}`}>
             <div>
               <img className='w-16' src={img} alt="logo" />
             </div>
-            <div className='font-semibold'>{skill}</div>
+            <div className='font-medium'>{skill}</div>
           </div>
         ))}
       </div>

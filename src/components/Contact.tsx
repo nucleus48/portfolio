@@ -14,7 +14,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-16">
-      <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+      <div className="flex flex-col sm:flex-row gap-8 items-center justify-center sm:justify-start">
         <div className="flex flex-col gap-4 w-full max-w-[500px]">
           <h2 className="mb-4 font-bold text-2xl">Contact Me</h2>
           <label className="flex flex-col gap-2">
