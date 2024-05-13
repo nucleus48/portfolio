@@ -22,7 +22,7 @@
     "url": "https://bnairaexchange.com",
     "preview": "bnairaexchange.png",
     "description": "B naira is a platform that offers seamless crypto and digital currencies trading. Empowering both novice traders and seasoned investors, we provide a user-friendly interface coupled with advanced tools to navigate the dynamic crypto market with confidence.",
-    "tools": ["Nextjs", "Tailwind", "Typescript", "React"],
+    "tools": ["Nextjs", "Tailwind", "Typescript"],
     "date": "5/6/2024"
   },
   {
@@ -30,7 +30,16 @@
     "url": "https://jiykeforexportal.com",
     "preview": "jiykeforexportal.png",
     "description": "J IYKE Forex Portal is a platform that offers seamless and affordable solutions for buying, selling and trading digital currencies in Nigeria. ",
-    "tools": ["Nextjs", "Tailwind", "Typescript", "React"],
-    "date": "5/6/2024"
+    "tools": ["Nextjs", "Tailwind", "Typescript"],
+    "date": "5/13/2024"
+  },
+  {
+    "name": "NoxeraFX",
+    "url": "https://noxerafx.web.app",
+    "source": "https://github.com/nucleus48/noxerafx",
+    "preview": "noxerafx.png",
+    "description": "A forex platform where professional traders trade for clients. It's a personal project to test my knowledge of user management.",
+    "tools": ["Tailwind", "Typescript", "React", "Firebase", "Clerk"],
+    "date": "5/2/2024"
   }
 ]
