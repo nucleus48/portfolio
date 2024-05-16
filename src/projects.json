@@ -9,15 +9,6 @@
     "date": "4/24/2024"
   },
   {
-    "name": "Fupre Community",
-    "url": "https://fupre-community.web.app",
-    "source": "https://github.com/nucleus48/fupre-community",
-    "preview": "fupre-community.jpg",
-    "description": "Your go-to platform for collaboration and connectivity at FUPRE. Join us now and be part of the vibrant community!",
-    "tools": ["React", "Clerk", "Tailwind", "Typescript"],
-    "date": "4/30/2024"
-  },
-  {
     "name": "B Naira Exchange",
     "url": "https://bnairaexchange.com",
     "preview": "bnairaexchange.png",
