@@ -6,7 +6,7 @@ export default function About() {
         <div className="border-l-4 border-blue-600 sm:border-l-0 sm:border-t-4 sm:w-1/4"></div>
         <div className="space-y-4">
           <p>
-            I'm a self-taught frontend web developer who embarked on this journey at the age of 16, driven solely by passion and curiosity. Over the past three years, I've honed my skills and transformed into a proficient software engineer, mastering HTML, CSS, and JavaScript along the way.
+            I'm a self-taught software developer who embarked on this journey at the age of 16, driven solely by passion and curiosity. Over the past years, I've honed my skills and transformed into a proficient software engineer, mastering React and Nextjs along the way.
           </p>
           <p>
             With a relentless pursuit of excellence, I thrive on crafting captivating user interfaces and seamless interactions. Always hungry for new challenges and technologies, I'm dedicated to continuous learning and growth, committed to delivering high-quality solutions that exceed expectations and leave a lasting impression.
