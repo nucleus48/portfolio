@@ -10,7 +10,7 @@ export default function Hero() {
         <h1 className="text-4xl leading-[3rem] md:leading-[4rem] font-bold md:text-5xl pr-14 sm:pr-0">
           Hi,<br />
           I'm Nucleus, <br />
-          Frontend Developer.
+          Fullstack Developer.
         </h1>
         <p className="text-xl">
           Crafting seamless online <br /> experience is my passion.
