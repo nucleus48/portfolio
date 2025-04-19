@@ -10,7 +10,6 @@
   {
     "name": "Garrden Therapist",
     "url": "https://demo.garrden.app/",
-    "source": "https://github.com/nucleus48/devlinks",
     "preview": "garrden.png",
     "description": "Garden Therapist is an AI-powered web app built for the Basedspace AI Hackathon in Lithuania. It features a “Mediator” tool that guides two users through structured, real-time conversations to foster meaningful dialogue.",
     "tools": ["Nextjs", "Firebase","Tailwind", "Typescript"],
@@ -19,6 +18,7 @@
   {
     "name": "Dev Links",
     "url": "https://devlinks-nucleus.vercel.app",
+    "source": "https://github.com/nucleus48/devlinks",
     "preview": "devlinks.png",
     "description": "DevLinks is a full-stack link-sharing app that lets users manage, preview, and reorder their links with drag-and-drop functionality. It includes user authentication, profile customization, real-time validations, and responsive design for seamless access across devices.",
     "tools": ["Nextjs", "Tailwind", "Typescript", "Postgres"],
