@@ -20,7 +20,7 @@
     "name": "Dev Links",
     "url": "https://devlinks-nucleus.vercel.app",
     "preview": "devlinks.png",
-    "description": "**DevLinks** is a full-stack link-sharing app that lets users manage, preview, and reorder their links with drag-and-drop functionality. It includes user authentication, profile customization, real-time validations, and responsive design for seamless access across devices.",
+    "description": "DevLinks is a full-stack link-sharing app that lets users manage, preview, and reorder their links with drag-and-drop functionality. It includes user authentication, profile customization, real-time validations, and responsive design for seamless access across devices.",
     "tools": ["Nextjs", "Tailwind", "Typescript", "Postgres"],
     "date": "5/13/2024"
   },
