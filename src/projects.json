@@ -10,6 +10,7 @@
   {
     "name": "Garrden Therapist",
     "url": "https://demo.garrden.app/",
+    "source": "https://github.com/nucleus48/devlinks",
     "preview": "garrden.png",
     "description": "Garden Therapist is an AI-powered web app built for the Basedspace AI Hackathon in Lithuania. It features a “Mediator” tool that guides two users through structured, real-time conversations to foster meaningful dialogue.",
     "tools": ["Nextjs", "Tailwind", "Typescript"],
