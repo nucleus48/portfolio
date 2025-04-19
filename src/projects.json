@@ -1,27 +1,26 @@
 [
   {
-    "name": "Coinflow Xchange",
-    "url": "https://coinflowxchange.com",
-    "source": "https://github.com/nucleus48/coinflowxchange",
-    "preview": "coinflowxchange.png",
-    "description": "Experience the simplicity and convenience of exchanging your cryptocurrencies and gift cards with our platform.",
-    "tools": ["HTML", "CSS", "JS"],
+    "name": "Skeleton Social",
+    "url": "https://www.skeleton.social",
+    "preview": "skeletonsocial.png",
+    "description": "Skeleton Social is a cross-platform social media app (web, Android) designed for anonymous self-expression. It features secret sharing, personalized matchmaking, and secure one-on-one chats in a judgment-free space.",
+    "tools": ["React Native", "Convex", "Nextjs", "Tailwind"],
     "date": "4/24/2024"
   },
   {
-    "name": "B Naira Exchange",
-    "url": "https://bnairaexchange.com",
-    "preview": "bnairaexchange.png",
-    "description": "B naira is a platform that offers seamless crypto and digital currencies trading. Empowering both novice traders and seasoned investors, we provide a user-friendly interface coupled with advanced tools to navigate the dynamic crypto market with confidence.",
+    "name": "Garrden Therapist",
+    "url": "https://demo.garrden.app/",
+    "preview": "garrden.png",
+    "description": "Garden Therapist is an AI-powered web app built for the Basedspace AI Hackathon in Lithuania. It features a “Mediator” tool that guides two users through structured, real-time conversations to foster meaningful dialogue.",
     "tools": ["Nextjs", "Tailwind", "Typescript"],
     "date": "5/6/2024"
   },
   {
-    "name": "J IYKE Forex Portal",
-    "url": "https://jiykeforexportal.com",
-    "preview": "jiykeforexportal.png",
-    "description": "J IYKE Forex Portal is a platform that offers seamless and affordable solutions for buying, selling and trading digital currencies in Nigeria. ",
-    "tools": ["Nextjs", "Tailwind", "Typescript"],
+    "name": "Dev Links",
+    "url": "https://devlinks-nucleus.vercel.app",
+    "preview": "devlinks.png",
+    "description": "**DevLinks** is a full-stack link-sharing app that lets users manage, preview, and reorder their links with drag-and-drop functionality. It includes user authentication, profile customization, real-time validations, and responsive design for seamless access across devices.",
+    "tools": ["Nextjs", "Tailwind", "Typescript", "Postgres"],
     "date": "5/13/2024"
   },
   {

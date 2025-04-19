@@ -15,8 +15,9 @@ export default function Skills() {
     ['Javascript', JS],
     ['Typescript', TS],
     ['React', RT],
+    ['React Native', RT],
     ["Nextjs", NextJS],
-    ['Tailwincss', TAILWIND],
+    ['Tailwind CSS', TAILWIND],
     ['Svelte', SVELTE],
     ['Firebase', FIREBASE]
   ]
