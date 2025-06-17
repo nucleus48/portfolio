@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 
 export default function ProjectsSection() {
   return (
-    <section className="space-y-8">
+    <section id="projects" className="space-y-8">
       <h2>PROJECTS & PRODUCTS</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

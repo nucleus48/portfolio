@@ -7,7 +7,7 @@ import TypescriptIcon from "@/components/icons/typescript-icon";
 
 export default function ToolsSection() {
   return (
-    <section className="space-y-8">
+    <section id="tools" className="space-y-8">
       <h2>PREMIUM TOOLS</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

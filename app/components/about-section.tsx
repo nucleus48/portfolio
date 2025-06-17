@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <section>
+    <section id="about">
       <article className={"space-y-8"}>
         <h2>ABOUT ME</h2>
         <p>

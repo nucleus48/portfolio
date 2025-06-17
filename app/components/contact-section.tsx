@@ -6,7 +6,7 @@ import Form from "next/form";
 
 export default function ContactSection() {
   return (
-    <section className="space-y-8">
+    <section id="contact" className="space-y-8">
       <h2>CONTACT ME</h2>
 
       <Form action="/" className="space-y-8">
