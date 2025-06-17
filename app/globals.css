@@ -119,4 +119,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  section h2 {
+    @apply text-xl font-bold;
+  }
 }
