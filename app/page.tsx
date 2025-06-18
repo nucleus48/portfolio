@@ -16,14 +16,18 @@ export default function HomePage() {
         <div className="hidden lg:block"></div>
         <div className="flex flex-col justify-between lg:fixed lg:pt-16 lg:h-screen">
           <IntroSection />
-          <MenuVertical
-            menuItems={[
-              { label: "About", href: "#about" },
-              { label: "Tools", href: "#tools" },
-              { label: "Projects", href: "#projects" },
-              { label: "Contact", href: "#contact" },
-            ]}
-          />
+          <div className="hidden lg:block mb-32">
+            <MenuVertical
+              color="oklch(0.62 0.19 260)"
+              skew={-10}
+              menuItems={[
+                { label: "About", href: "#about" },
+                { label: "Tools", href: "#tools" },
+                { label: "Projects", href: "#projects" },
+                { label: "Contact", href: "#contact" },
+              ]}
+            />
+          </div>
           <div className="hidden lg:block">
             <Footer />
           </div>
