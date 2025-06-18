@@ -23,7 +23,7 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
       <body className={`${interSans.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

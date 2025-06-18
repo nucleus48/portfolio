@@ -116,15 +116,29 @@
   * {
     @apply border-border outline-ring/50 scroll-smooth;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 
   section h2 {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold sm:text-2xl;
+  }
+
+  section p {
+    @apply text-muted-foreground lg:text-lg;
   }
 
   .glass {
-    @apply bg-white/10 shadow-lg backdrop-blur-sm border border-white/20;
+    @apply bg-white/10 shadow-lg backdrop-blur-sm border border-white/15;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

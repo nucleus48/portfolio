@@ -1,4 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 import {
   BlocksIcon,
   BookTextIcon,
@@ -6,17 +14,37 @@ import {
   HouseIcon,
   WrenchIcon,
 } from "lucide-react";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="p-4 fixed top-0 inset-x-0 z-50 flex justify-center">
-      <nav className="glass flex justify-center gap-4 px-4 py-2 rounded-2xl">
+    <header
+      className={cn(
+        "p-4 sticky -top-100 inset-x-0 z-50 flex justify-center transition-all pb-11 lg:hidden",
+        scrollY > 100 && "top-0"
+      )}
+    >
+      <nav
+        className={cn(
+          "flex justify-center gap-4 px-4 py-2 rounded-2xl transition-all",
+          scrollY > 100 && "glass"
+        )}
+      >
         <Tooltip>
           <TooltipTrigger asChild>
             <Button variant={"ghost"} size={"icon"} asChild>

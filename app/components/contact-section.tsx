@@ -10,7 +10,7 @@ export default function ContactSection() {
       <h2>CONTACT ME</h2>
 
       <Form action="/" className="space-y-8">
-        <div className="flex flex-row gap-4 md:gap-8">
+        <div className="flex flex-row *:flex-1 gap-4 md:gap-8">
           <div className="space-y-2">
             <Label>Name</Label>
             <Input placeholder="Your Name" />

@@ -10,7 +10,7 @@ export default function ToolsSection() {
     <section id="tools" className="space-y-8">
       <h2>PREMIUM TOOLS</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid [grid-template-columns:_repeat(auto-fit,minmax(256px,1fr))] gap-8">
         <Tool
           icon={<NextJSIcon />}
           title="Nextjs"
@@ -46,7 +46,7 @@ interface ToolProps {
 
 function Tool({ icon, title, description }: ToolProps) {
   return (
-    <div className="flex gap-4 p-4">
+    <div className="flex gap-4 hover:bg-white/10 hover:shadow-lg hover:backdrop-blur-sm hover:border hover:border-white/15">
       <div className="bg-white p-2 text-5xl rounded-xl aspect-square h-full flex items-center justify-center">
         {icon}
       </div>

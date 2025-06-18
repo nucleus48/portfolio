@@ -7,7 +7,7 @@ export default function ProjectsSection() {
     <section id="projects" className="space-y-8">
       <h2>PROJECTS & PRODUCTS</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="space-y-8">
         <ProjectCard
           title="Skeleton Social"
           description="Anonymous web and mobile social media platform"
@@ -26,8 +26,8 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, imageSrc, description }: ProjectCardProps) {
   return (
-    <div className="p-4 gap-4 grid [grid-template-columns:_auto_1fr]">
-      <div className="bg-white px-2 pt-2 size-32 overflow-hidden rounded-md">
+    <div className="gap-4 sm:grid sm:[grid-template-columns:_auto_1fr]">
+      <div className="bg-white px-1 pt-1 overflow-hidden rounded-sm size-24 hidden sm:block">
         <Image src={imageSrc} alt="skeleton social landing page" />
       </div>
       <div>
