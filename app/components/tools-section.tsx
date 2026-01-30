@@ -46,7 +46,7 @@ interface ToolProps {
 
 function Tool({ icon, title, description }: ToolProps) {
   return (
-    <div className="flex gap-4 hover:bg-white/10 hover:shadow-lg hover:backdrop-blur-sm hover:border hover:border-white/15">
+    <div className="flex gap-4">
       <div className="bg-white p-2 text-5xl rounded-xl aspect-square h-full flex items-center justify-center">
         {icon}
       </div>

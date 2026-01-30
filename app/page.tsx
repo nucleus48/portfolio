@@ -1,3 +1,5 @@
+"use client";
+
 import { MenuVertical } from "@/components/ui/menu-vertical";
 import AboutSection from "./components/about-section";
 import ContactSection from "./components/contact-section";
@@ -7,6 +9,14 @@ import Header from "./components/header";
 import IntroSection from "./components/intro-section";
 import ProjectsSection from "./components/projects-section";
 import ToolsSection from "./components/tools-section";
+import * as motion from "motion/react-client";
+
+const sectionAnimation = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-100px" },
+  transition: { duration: 0.6, ease: "easeOut" as const },
+};
 
 export default function HomePage() {
   return (
@@ -18,28 +28,44 @@ export default function HomePage() {
         <div className="flex flex-col justify-between lg:fixed lg:pt-16 lg:h-screen">
           <IntroSection />
           <div className="hidden lg:block mb-32">
-            <MenuVertical
-              color="oklch(0.62 0.19 260)"
-              skew={-10}
-              menuItems={[
-                { label: "About", href: "#about" },
-                { label: "Experience", href: "#experience" },
-                { label: "Tools", href: "#tools" },
-                { label: "Projects", href: "#projects" },
-                { label: "Contact", href: "#contact" },
-              ]}
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+            >
+              <MenuVertical
+                color="oklch(0.62 0.19 260)"
+                skew={-10}
+                menuItems={[
+                  { label: "About", href: "#about" },
+                  { label: "Experience", href: "#experience" },
+                  { label: "Tools", href: "#tools" },
+                  { label: "Projects", href: "#projects" },
+                  { label: "Contact", href: "#contact" },
+                ]}
+              />
+            </motion.div>
           </div>
           <div className="hidden lg:block">
             <Footer />
           </div>
         </div>
         <div className="space-y-16 lg:pt-16">
-          <AboutSection />
-          <ExperienceSection />
-          <ToolsSection />
-          <ProjectsSection />
-          <ContactSection />
+          <motion.div {...sectionAnimation}>
+            <AboutSection />
+          </motion.div>
+          <motion.div {...sectionAnimation}>
+            <ExperienceSection />
+          </motion.div>
+          <motion.div {...sectionAnimation}>
+            <ToolsSection />
+          </motion.div>
+          <motion.div {...sectionAnimation}>
+            <ProjectsSection />
+          </motion.div>
+          <motion.div {...sectionAnimation}>
+            <ContactSection />
+          </motion.div>
           <div className="lg:hidden">
             <Footer />
           </div>
