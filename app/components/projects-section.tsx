@@ -1,31 +1,40 @@
-import { Apple, Globe, Play } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "Lumina AI",
-    description: "Advanced AI-driven content generation and insights platform.",
-    links: {
-      web: "https://lumina.ai",
-    },
+    image: "/skeleton-social.png",
+    title: "Skeleton Social",
     color: "bg-blue-500/10",
-  },
-  {
-    title: "Syncro",
     description:
-      "Real-time collaboration tool for distributed engineering teams.",
+      "A privacy first social network for sharing honest perspectives and building anonymous communities. Speak your truth, find your tribe, and maintain total privacy.",
     links: {
-      appStore: "https://apple.com",
-      playStore: "https://google.com",
+      web: "https://www.skeleton.social",
+      appStore: "https://apps.apple.com/app/apple-store/id6751761306",
+      playStore:
+        "https://play.google.com/store/apps/details?id=com.skeleton.social",
     },
-    color: "bg-purple-500/10",
   },
   {
-    title: "Pulse Health",
-    description: "Holistic wellness tracker with personalized health metrics.",
+    image: "/payonus.png",
+    title: "PayOnUs",
+    description:
+      "A global payment infrastructure empowering African businesses to accept payments from anywhere in the world. Seamlessly bridge the gap between local commerce and international markets.",
+    color: "bg-purple-500/10",
     links: {
-      appStore: "https://apple.com",
+      web: "https://payonus.com",
     },
+  },
+  {
+    image: "/mshell.png",
+    title: "Mshel Homes Limited",
+    description:
+      "A premier real estate development platform dedicated to simplifying home ownership. Delivering innovative housing solutions and investment opportunities that empower individuals to secure their future.",
     color: "bg-emerald-500/10",
+    links: {
+      web: "https://mshelhomes.com/",
+    },
   },
 ];
 
@@ -44,6 +53,7 @@ export default function ProjectsSection() {
 }
 
 interface ProjectCardProps {
+  image: string;
   title: string;
   description: string;
   links: {
@@ -54,59 +64,71 @@ interface ProjectCardProps {
   color: string;
 }
 
-function ProjectCard({ title, description, links, color }: ProjectCardProps) {
+function ProjectCard({
+  title,
+  description,
+  links,
+  color,
+  image,
+}: ProjectCardProps) {
   return (
     <div className="group/project flex flex-col gap-4">
-      {/* Placeholder Image */}
       <div
         className={`w-full aspect-video rounded-xl ${color} border border-border flex items-center justify-center overflow-hidden relative group-hover/project:border-primary/50 transition-colors`}
       >
-        <div className="absolute inset-0 bg-linear-to-br from-white/5 to-transparent opacity-50" />
-        <Globe className="size-8 text-muted-foreground/20" />
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover object-top w-full h-full"
+        />
       </div>
 
       <div className="space-y-3">
-        <div className="flex items-center justify-between gap-2">
-          <h3 className="font-semibold text-xl">{title}</h3>
-          <div className="flex gap-2">
-            {links.web && (
-              <a
-                href={links.web}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                title="View Web App"
-              >
-                <Globe className="size-4" />
-              </a>
-            )}
-            {links.appStore && (
-              <a
-                href={links.appStore}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                title="Download on App Store"
-              >
-                <Apple className="size-4" />
-              </a>
-            )}
-            {links.playStore && (
-              <a
-                href={links.playStore}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                title="Get it on Play Store"
-              >
-                <Play className="size-4" />
-              </a>
-            )}
-          </div>
-        </div>
+        <h3 className="font-semibold text-xl">{title}</h3>
+
         <p className="text-sm text-muted-foreground leading-relaxed">
           {description}
         </p>
+
+        <div className="flex gap-2">
+          {links.web && (
+            <Link
+              target="_blank"
+              href={links.web}
+              title="View Web App"
+              rel="noopener noreferrer"
+            >
+              <Badge variant="secondary" className="text-[10px] px-2 py-0">
+                Web
+              </Badge>
+            </Link>
+          )}
+          {links.appStore && (
+            <Link
+              target="_blank"
+              href={links.appStore}
+              rel="noopener noreferrer"
+              title="Download on App Store"
+            >
+              <Badge variant="secondary" className="text-[10px] px-2 py-0">
+                App Store
+              </Badge>
+            </Link>
+          )}
+          {links.playStore && (
+            <Link
+              target="_blank"
+              href={links.playStore}
+              rel="noopener noreferrer"
+              title="Get it on Play Store"
+            >
+              <Badge variant="secondary" className="text-[10px] px-2 py-0">
+                Play Store
+              </Badge>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
