@@ -1,6 +1,7 @@
 import { MenuVertical } from "@/components/ui/menu-vertical";
 import AboutSection from "./components/about-section";
 import ContactSection from "./components/contact-section";
+import ExperienceSection from "./components/experience-section";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import IntroSection from "./components/intro-section";
@@ -22,6 +23,7 @@ export default function HomePage() {
               skew={-10}
               menuItems={[
                 { label: "About", href: "#about" },
+                { label: "Experience", href: "#experience" },
                 { label: "Tools", href: "#tools" },
                 { label: "Projects", href: "#projects" },
                 { label: "Contact", href: "#contact" },
@@ -34,6 +36,7 @@ export default function HomePage() {
         </div>
         <div className="space-y-16 lg:pt-16">
           <AboutSection />
+          <ExperienceSection />
           <ToolsSection />
           <ProjectsSection />
           <ContactSection />
