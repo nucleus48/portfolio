@@ -52,7 +52,7 @@ export default function IntroSection() {
       </motion.p>
       <motion.div variants={itemVariants} className="flex gap-4">
         <Button size={"lg"} asChild>
-          <Link href={"/resume.pdf"} target="_blank">
+          <Link href={"/Nucleus-Erumagborie-Resume.pdf"} target="_blank">
             <span>View Resume</span>
             <ArrowUpRightIcon />
           </Link>
