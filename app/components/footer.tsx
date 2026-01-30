@@ -14,10 +14,7 @@ export default function Footer() {
         <Link href="https://github.com/nucleus48" target="_blank">
           <GithubIcon />
         </Link>
-        <Link
-          href="https://www.linkedin.com/in/nucleus-erumagborie-3b3331251/"
-          target="_blank"
-        >
+        <Link href="https://www.linkedin.com/in/nucleuseru" target="_blank">
           <LinkedinIcon />
         </Link>
         <Link href="https://wa.link/atx99w" target="_blank">
